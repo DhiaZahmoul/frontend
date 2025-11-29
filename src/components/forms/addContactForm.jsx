@@ -71,7 +71,7 @@ const CreateChat = () => {
 
       const usersToSend = [currentUserId, ...validSelectedUsers];
 
-      const response = await fetch("${process.env.NEXT_PUBLIC_API_URL}/api/chats/createchat", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chats/createchat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
